@@ -63,8 +63,18 @@ nav {
     background-color: #fff;
 }
 
+footer {
+    border: 1px solid #111;
+    padding: 3rem 0rem;
+}
+
+footer a {
+  color: blue;
+}
+
 @media (max-width:616px) {
     nav, .menu {
         flex-direction: column;
     }
 }
+
