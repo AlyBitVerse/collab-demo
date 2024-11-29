@@ -66,10 +66,10 @@ nav {
   background-color: #fff;
 }
 
-section {
+#hero {
   background-color: #9acd32;
 }
-section .content {
+#hero .content {
   margin: 0 auto;
   max-width: 768px;
   padding:2rem;
@@ -79,7 +79,7 @@ section .content {
   
 }
 
-section .content div { 
+#hero .content div { 
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -87,21 +87,68 @@ section .content div {
   opacity: 0.4;
 }
 
-section button {
+#hero button {
   width: fit-content;
   align-self: flex-start;
 }
-section button:hover {
+#hero button:hover {
   cursor: pointer;
   background-color: #fff;
 }
 
-section div h1 {
+#hero div h1 {
   font-size: 3rem;
-
 }
  
+main {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  
+}
 
+/* Cards section */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 300px;
+}
+
+.card .img {
+  font-size:2rem;
+  position: relative;
+  height: 250px;
+  background-color: #d4d4d4;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.card .img h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.card  a { 
+  font-size: 1.5rem;
+  color: blue;
+}
+.card  a:hover { 
+  text-decoration: underline;
+}
 /* Start section */
 
 .section {
