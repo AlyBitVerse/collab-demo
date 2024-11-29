@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1175px;
+}
+
 body {
   font: normal 1rem Tahoma, sans-serif;
   line-height: 1.4;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 768px;
 }
 
 a {
@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.menu a:hover {
   color: #fff;
 }
 
@@ -128,13 +128,17 @@ nav {
 /* End section */
 
 footer {
-  border: 1px solid #111;
-  padding: 3rem 0rem;
+  padding: 3rem 1rem;
 }
 
 footer a {
   color: blue;
 }
+
+footer a:hover {
+  color: rgb(0, 89, 255);
+}
+
 
 @media (max-width: 616px) {
   nav,
@@ -142,3 +146,5 @@ footer a {
     flex-direction: column;
   }
 }
+
+
