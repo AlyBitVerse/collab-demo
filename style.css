@@ -48,7 +48,8 @@ nav {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.search-wrapper *, section button {
+.search-wrapper *,
+section button {
   padding: 0.25rem;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -72,14 +73,13 @@ section {
 section .content {
   margin: 0 auto;
   max-width: 768px;
-  padding:2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  
 }
 
-section .content div { 
+section .content div {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -98,10 +98,13 @@ section button:hover {
 
 section div h1 {
   font-size: 3rem;
-
 }
- 
-
+/* Start Cards Section  */
+.page-header h1 span {
+  font-size: 20px;
+  color: #8d8d8d;
+}
+/* End Cards Section  */
 /* Start section */
 
 .section {
@@ -150,7 +153,7 @@ section div h1 {
   display: inline-block;
   padding: 7px;
   border-radius: 5px;
-  border: none; 
+  border: none;
 }
 
 .text-content .btn:hover {
@@ -181,12 +184,9 @@ footer a:hover {
   color: rgb(0, 89, 255);
 }
 
-
 @media (max-width: 616px) {
   nav,
   .menu {
     flex-direction: column;
   }
 }
-
-
