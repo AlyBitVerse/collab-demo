@@ -48,7 +48,8 @@ nav {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.search-wrapper *, section button {
+.search-wrapper *,
+section button {
   padding: 0.25rem;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -66,42 +67,113 @@ nav {
   background-color: #fff;
 }
 
-section {
+#hero {
   background-color: #9acd32;
+  height: 20rem;
 }
-section .content {
-  margin: 0 auto;
-  max-width: 768px;
-  padding:2rem;
+
+#hero .content {
+  max-width: 1400px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-section .content div { 
+#hero .content i{
+  color: rgb(102, 61, 0);
+}
+
+#hero .content div { 
   display: flex;
   gap: 1rem;
   align-items: center;
   color: white;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
-section button {
+#hero .content p { 
+  color: white;
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
+
+#hero button {
   width: fit-content;
   align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font-size: medium;
 }
-section button:hover {
+
+#hero button:hover {
   cursor: pointer;
   background-color: #fff;
 }
 
-section div h1 {
-  font-size: 3rem;
-
+#hero div h1 {
+  font-size: 4rem;
+  font-weight: 400;
 }
  
+main {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  margin: auto;
+}
 
+/* Cards section */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 400px;
+}
+
+.card .img {
+  font-size:2rem;
+  position: relative;
+  height: 250px;
+  background-color: #d4d4d4;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.card .img h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.card  a { 
+  font-size: 1.5rem;
+  color: blue;
+}
+.card  a:hover { 
+  text-decoration: underline;
+}
+/* Start Cards Section  */
+.page-header h1 span {
+  font-size: 20px;
+  color: #8d8d8d;
+}
+/* End Cards Section  */
 /* Start section */
 
 .section {
@@ -109,16 +181,17 @@ section div h1 {
   background-color: #e2d7d7;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 30px 70px;
+  gap: 1.5rem;
+  padding: 2rem 0;
 }
 @media (max-width: 990px) {
   .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 70px;
+    padding: 1.5rem ;
   }
+  
   .text-content {
     width: 100%;
   }
@@ -129,8 +202,8 @@ section div h1 {
   flex-direction: column;
   width: 400px;
   justify-content: flex-start;
-  padding: 30px;
 }
+
 @media (max-width: 990px) {
   .text-content {
     width: 100%;
@@ -150,7 +223,7 @@ section div h1 {
   display: inline-block;
   padding: 7px;
   border-radius: 5px;
-  border: none; 
+  border: none;
 }
 
 .text-content .btn:hover {
@@ -181,12 +254,17 @@ footer a:hover {
   color: rgb(0, 89, 255);
 }
 
-
 @media (max-width: 616px) {
   nav,
   .menu {
     flex-direction: column;
   }
+
+  #hero .content h1 { 
+    font-size: 1.5rem;
+  }
+
+  #hero .content p { 
+    font-size: 1rem;
+  }
 }
-
-
